@@ -18,11 +18,11 @@ This can be resolved by whitelisting the following IP addresses. These IP addres
 
 Ask your IT team to whitelist the following IP addresses:
 
-| Region | IP Addresses |
-|--- |--- |
-|United States|52.55.99.45|
-|Europe, Middle East, and Africa (EMEA)|52.51.238.221|
-|Asia-Pacific (APAC)|52.193.67.35|
+| Region | IP Addresses | Hostnames |
+|--- |--- |--- |
+|United States|52.55.99.45| us1-proxy.adobemc.com |
+|Europe, Middle East, and Africa (EMEA)|52.51.238.221| emea1-proxy.adobemc.com |
+|Asia-Pacific (APAC)|52.193.67.35| apac1-proxy.adobemc.com |
 
 You might see the following error message in Target:
 
