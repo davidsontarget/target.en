@@ -33,7 +33,7 @@ Apple ITP 2.1 and 2.1 impact [!DNL Target] in the following areas:
 
 ## Is my current implementation of [!DNL Target] impacted?
 
-In a Safari browser, navigate to your website on which you have a [!DNL Target] JavaScript library. If you see a [!DNL Target] cookie set in the context of a CNAME, such as `analytics.company.com`, then you are not impacted by ITP 2.1 or 2.2.  
+In a Safari browser, navigate to your website on which you have a [!DNL Target] JavaScript library. If you see a [!DNL Target] cookie set in the context of a CNAME then you are not impacted by ITP 2.1 or 2.2. The process to set up CNAME for Target is defined in the following documentation called [CNAME and Adobe Target](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/implement-cname-support-in-target.html).
 
 If you are using the Experience Cloud ID (ECID) library in addition to the Target JavaScript library, your implementation will be impacted in the ways listed in this article: [Safari ITP 2.1 Impact on Adobe Experience Cloud and Experience Platform Customers](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac).
 
@@ -47,13 +47,16 @@ To mitigate the impact of ITP 2.1, ITP 2.2, and future ITP releases to [!DNL Tar
 
    For ITP 2.1 and ITP 2.2, [ECID library 4.3.0+](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-release-notes.html) must be utilized for mitigation.
 
-1. Use Adobe’s CNAME and Enroll in Adobe Analytics' Managed Certificate Program.
+2. Use Adobe’s CNAME and Enroll in Adobe Analytics' Managed Certificate Program.
 
    After installing the ECID library 4.3.0+, you can leverage Adobe Analytics' CNAME and Managed Certificate Program. This program lets you implement a first-party certificate for first-party cookies at no charge. Leveraging CNAME will help [!DNL Target] customers mitigate the impact of ITP 2.1 and ITP 2.2. 
 
    If you are not leveraging CNAME, you can start the process by talking with your account representative and enrolling in the [Adobe Managed Certificate Program](https://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/adobe_managed_cert_pgm.html).
 
-After you deploy a Target JavaScript library in conjunction with the ECID library v4.3.0+ and enroll in the Adobe Managed Certificate Program to leverage CNAME, you will have a robust and long-term mitigation plan for ITP-related changes.
+3. Follow the process to set up CNAME for Adobe Target
+Follow the directions outlined in this documentation: [CNAME and Adobe Target](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/implement-cname-support-in-target.html).
+
+After you deploy a Target JavaScript library in conjunction with the ECID library v4.3.0+ and have set up CNAME, you will have a robust and long-term mitigation plan for ITP-related changes.
 
 As the industry makes strides to create a more secure web for consumers, [!DNL Adobe Target] is absolutely committed to delivering personalized experiences while meeting and exceeding the privacy expectations of visitors. [!DNL Adobe Target] has already announced support for [Google’s SameSite Chrome Policies](/help/c-implementing-target/c-considerations-before-you-implement-target/c-privacy/google-chrome-samesite-cookie-policies.md) in addition to support for Apple’s ITP 2.1 and ITP 2.2. 
 
